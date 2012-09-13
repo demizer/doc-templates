@@ -56,18 +56,15 @@ Provide the definitions of all terms, acronyms, and abbreviations required to
 properly interpret the SRS.
 
 GUI
-
     Graphical User Interface
 
 SRS
     Software Requirements Specification
 
 IEEE
-
     Institute of Electrical ond Electronics Engineers
 
 Customer
-
     The user of the application.
 
 1.4 References
