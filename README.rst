@@ -2,10 +2,10 @@
 New Project Document Templates
 ==============================
 
-:Author: Jesus Alvarez
-:Contact: github.com/demizer
-:Revision: 0.3
+:Contributors: Jesus Alvarez (github.com/demizer)
+:Modified: Sat Sep 15 12:27:05 PDT 2012
 :Copyright: This project and documents have been placed in the public domain.
+:Revision: 0.5
 
 These are my document templates that I use for new projects. They are written
 in reStructuredText_ and converted to PDFs using the ``pdocs.sh`` script.
@@ -28,11 +28,13 @@ File Overview
 =============
 
 - ``hack.rst``: Used for quick introduction developer documentation, such as
-  dvcs usage and the development process.
+  dvcs usage and the development process for the project.
 
-- ``reqs.rst``: Software Requirements Specification document template.
+- ``spec.rst``: Open source software specification template.
 
-- ``spec.rst``: Software Design Description document template.
+- ``ieee_reqs.rst``: Software Requirements Specification document template.
+
+- ``ieee_spec.rst``: Software Design Description document template.
 
 - ``todo.rst``: Things to Do template for tracking progress.
 
