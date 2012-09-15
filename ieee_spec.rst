@@ -4,11 +4,11 @@
 Design Specification for <project>
 ======================================
 
-:Author: Jesus Alvarez
-:Contact: github.com/demizer
-:Revision: 1.0.0
-:Modified: 2012-07-17 17:14 Tue
+:Contributors: Jesus Alvarez (github.com/demizer)
+:Created: Tue Jul 17 12:00:00 PDT 2012
+:Modified: Sat Sep 15 12:34:30 PDT 2012
 :Copyright: This document has been placed in the public domain.
+:Revision: 1.0.0
 
 .. contents::
 
