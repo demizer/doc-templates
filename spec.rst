@@ -6,7 +6,7 @@ Open Source Software Specification Template
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Fri Sep 14 01:34:58 PDT 2012
-:Modified: Sun Sep 16 21:30:48 PDT 2012
+:Modified: Sun Sep 16 21:32:20 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -40,23 +40,23 @@ software project to increase community interest in your project.
 
 A specification should be written with the following considerations:
 
-* The person implementing it may not be the person writing it. It should be clear
-enough for someone to be able to read it and have a clear path towards
-implementing it. If it doesn't, it needs more detail.
+* The person implementing it may not be the person writing it. It should be
+  clear enough for someone to be able to read it and have a clear path towards
+  implementing it. If it doesn't, it needs more detail.
 
-* That the use cases covered in the specification should be practical situations,
-not contrived issues.
+* That the use cases covered in the specification should be practical
+  situations, not contrived issues.
 
-* Limitations and issues discovered during the creation of a specification should
-be clearly pointed out so that they can be dealt with explicitly.
+* Limitations and issues discovered during the creation of a specification
+  should be clearly pointed out so that they can be dealt with explicitly.
 
 * If you don't know enough to be able to competently write a spec, you should
-either get help or research the problem further. Avoid spending time making up
-a solution: base yourself on your peers' opinions and prior work.
+  either get help or research the problem further. Avoid spending time making
+  up a solution: base yourself on your peers' opinions and prior work.
 
 * Specifications should be written in clear, concise and correct English. If
-you're not a native speaker, co-editing the spec with somebody who is might be
-a good idea.
+  you're not a native speaker, co-editing the spec with somebody who is might
+  be a good idea.
 
 2. Rationale
 ============
