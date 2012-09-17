@@ -6,7 +6,7 @@ Open Source Software Specification Template
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Fri Sep 14 01:34:58 PDT 2012
-:Modified: Sun Sep 16 17:22:35 PDT 2012
+:Modified: Sun Sep 16 21:30:48 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
