@@ -16,7 +16,7 @@ in reStructuredText_ and converted to PDFs using the ``pdocs.sh`` script.
 Dependencies
 ------------
 
-* rst2pdf: http://rst2pdf.ralsina.com.ar/
+* rst2pdf_
 
 -------
 Purpose
@@ -71,3 +71,4 @@ Currently, there are no examples of these templates in use. If you have any,
 please send a pull request!
 
 .. _reStructuredText: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#implicit-hyperlink-targets
+.. _rst2pdf: http://rst2pdf.ralsina.com.ar/
