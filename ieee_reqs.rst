@@ -6,14 +6,15 @@ Requirements Specification for <project>
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Tue Jul 17 12:00:00 PDT 2012
-:Modified: Sat Sep 15 12:34:30 PDT 2012
+:Modified: Mon Sep 17 01:00:46 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
 .. contents::
 
+---------------
 1. Introduction
-===============
+---------------
 
 This is an example SRS document following the IEEE STD 830-1998 standard. This
 document is meant to be used as guideline describing what the application or
@@ -29,13 +30,13 @@ this document.
 
 
 1.1 Purpose
------------
+===========
 
 Identify the purpose of this SRS and its intended audience. This audience could
 be made up of project managers, designers (architecture, UI), or customers.
 
 1.2 Scope of Project
---------------------
+====================
 
 Use this section to give a brief overview of the project. This should be an
 overview and not a definitive explanation.
@@ -50,7 +51,7 @@ A. Identify the software project to be produced by name.
 #. Be consistent with similar statements in higher-level specifications.
 
 1.3 Glossary
-------------
+============
 
 Provide the definitions of all terms, acronyms, and abbreviations required to
 properly interpret the SRS.
@@ -68,13 +69,13 @@ Customer
     The user of the application.
 
 1.4 References
---------------
+==============
 
 Provide a list of all documents referenced in this SRS and how to obtain them.
 Identify each document by title, date, and organization.
 
 1.5 How to Use This Document
-----------------------------
+============================
 
 Explain how the SRS is organized and what sections particular groups should
 read.
@@ -83,8 +84,9 @@ If you are just using this document as a template for your own SRS, don't just
 delete sections that are not applicable. Simply state that the section does not
 apply to the project.
 
+----------------------
 2. General Description
-======================
+----------------------
 
 This section will give the reader an overview of the project, including why it
 was conceived, what it will do when complete, and the types of people we expect
@@ -92,7 +94,7 @@ will use it. This section provides a background for requirements described in
 section 3 and also outlines requirements in English for the customer.
 
 2.1 Project Perspective
------------------------
+=======================
 
 This subsection of the SRS should put the project into perspective with other
 related projects. If the project is independent and totally self-contained, it
@@ -124,7 +126,7 @@ A. System interfaces
 #. Site adaptation requirements.
 
 2.1.1 System Interfaces
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 List each system interface and identify the functionality of the software to
 accomplish the system requirement and the interface description to match the
@@ -135,7 +137,7 @@ application for tracking parts within a company must access the part database
 API. What are the general details of that API that designers should know about?
 
 2.1.2 Interfaces
-~~~~~~~~~~~~~~~~
+----------------
 
 This is a description of how the system will interact with its users to
 accomplish software requirements.
@@ -150,7 +152,7 @@ accomplish software requirements.
    earth?
 
 2.1.3 Hardware Interfaces
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 Specify the logical characteristics of each interface between the software
 project and the hardware components of the system. This includes configuration
@@ -168,7 +170,7 @@ Many business type applications will have no hardware interfaces. If none, just
 state “The system has no hardware interface requirements”.
 
 2.1.4 Software Interfaces
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 Specify the use of other required software projects and interfaces with other
 application systems. For each required software project, include:
@@ -195,7 +197,7 @@ but that our system has to use. For instance if your customer uses SQLite
 and you are required to use that, then you need to specify i.e.,
 
 2.1.4.1 SQLite
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 The system must use SQLite 3.0 and above as its database component. This is to
 allow the database to be portable and easily maintainable.
@@ -208,7 +210,7 @@ important point to writing good requirements and not over-constraining the
 design.
 
 2.1.5 Communications Interfaces
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 Specify the various interfaces to communications such as local network
 protocols, etc. These are protocols you will need to directly interact with.
@@ -218,7 +220,7 @@ systems, then document that protocol here so designers know what to design. If
 it is a standard protocol, you can reference an existing document or RFC.
 
 2.1.6 Memory Constraints
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 Specify any applicable characteristics and limits on primary and secondary
 memory. Don’t just make up something here. If all the customer’s machines have
@@ -229,7 +231,7 @@ market has between 256-512M of RAM, therefore the design footprint should not
 exceed 256M.” If there are no memory constraints, so state.
 
 2.1.7 Operations
-~~~~~~~~~~~~~~~~
+----------------
 
 Specify the normal and special operations required by the user such as:
 
@@ -250,7 +252,7 @@ design. These are all the work tasks that impact the design of an application,
 but which might not be located in software.
 
 2.1.8 Site Adaption Requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 In this section:
 
@@ -272,7 +274,7 @@ any software setup that needs to be done so that your system will install and
 operate correctly should be documented here.
 
 2.2 Functional Requirements Specification
------------------------------------------
+=========================================
 
 Provide a summary of the major functions that the software will perform.
 Sometimes the function summary that is necessary for this part can be taken
@@ -296,7 +298,7 @@ good, but remember this is a description of what the system needs to do, not
 how you are going to build it. (That comes in the design document).
 
 2.3 User Characteristics
-------------------------
+========================
 
 Describe those general characteristics of the intended users of the project
 including educational level, experience, and technical expertise. Do not state
@@ -308,7 +310,7 @@ experience and comfort with technology will drive UI design. Other
 characteristics might actually influence internal design of the system.
 
 2.4 Constraints
-----------------
+================
 
 Provide a general description of any other items that will limit the
 developer's options. These can include:
@@ -339,7 +341,7 @@ This section captures non-functional requirements in the customers language. A
 more formal presentation of these will occur in section 3.
 
 2.5 Assumptions and Dependencies
---------------------------------
+================================
 
 List each of the factors that affect the requirements stated in the SRS. These
 factors are not design constraints on the software but are, rather, any changes
@@ -352,7 +354,7 @@ This section is catch-all for everything else that might influence the design
 of the system and that did not fit in any of the categories above.
 
 2.6 Apportioning of Requirements
---------------------------------
+================================
 
 Identify requirements that may be delayed until future versions of the system.
 After you look at the project plan and hours available, you may realize that
@@ -362,8 +364,9 @@ customer they should prioritize the requirements and decide what does and does
 not get done. This can also be useful if you are using an iterative life cycle
 model to specify which requirements will map to which interation.
 
+-----------------------------
 3. Requirements Specification
-=============================
+-----------------------------
 
 This section contains all the software requirements at a level of detail
 sufficient to enable designers to design a system to satisfy those
@@ -428,7 +431,7 @@ or if there are 200. List every piece of information that is required so the
 designers can build the right UI and data tables.
 
 3.1 External Interfaces
------------------------
+=======================
 
 This contains a detailed description of all inputs into and outputs from the
 software system. It complements the interface descriptions in section 2 but
@@ -462,7 +465,7 @@ It contains both content and format as follows:
 #. End messages
 
 3.2 Functions
--------------
+=============
 
 Functional requirements define the fundamental actions that must take place in
 the software in accepting and processing the inputs and in processing and
@@ -496,7 +499,7 @@ sub-functions or sub-processes. This does not imply that the software design
 will also be partitioned that way.
 
 3.3 Performance Requirements
-----------------------------
+============================
 
 This subsection specifies both the static and the dynamic numerical
 requirements placed on the software or on human interaction with the software,
@@ -530,7 +533,7 @@ rather than,
           function.
 
 3.4 Logical Database Requirements
----------------------------------
+=================================
 
 This section specifies the logical requirements for any information that is to
 be placed into a database. This may include:
@@ -552,13 +555,13 @@ diagrams (or static class diagrams) can be useful here to show complex data
 relationships.
 
 3.5 Design Constraints
-----------------------
+======================
 
 Specify design constraints that can be imposed by other standards, hardware
 limitations, etc.
 
 3.5.1 Standards Compliance
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 Specify the requirements derived from existing standards or regulations. They might include:
 
@@ -577,7 +580,7 @@ example, state that all changes to a payroll database must be recorded in a
 trace file with before and after values.
 
 3.6 Software System Attributes
-------------------------------
+==============================
 
 There are a number of attributes of software that can serve as requirements. It
 is important that required attributes by specified so that their achievement
@@ -590,7 +593,7 @@ cross-cut) the design. These requirements have to be testable just like the
 functional requirements.
 
 3.6.1 Reliability
-~~~~~~~~~~~~~~~~~
+-----------------
 
 Specify the factors required to establish the required reliability of the
 software system at time of delivery. If you have MTBF requirements, express
@@ -598,7 +601,7 @@ them here. This doesn’t refer to just having a program that does not crash.
 This has a specific engineering meaning.
 
 3.6.2 Availability
-~~~~~~~~~~~~~~~~~~
+------------------
 
 Specify the factors required to guarantee a defined availability level for the
 entire system such as checkpoint, recovery, and restart. This is somewhat
@@ -610,7 +613,7 @@ the application after failure with the loss of at most 12 characters of
 input”*.
 
 3.6.3 Security
-~~~~~~~~~~~~~~
+--------------
 
 Specify the factors that would protect the software from accidental or
 malicious access, use, modification, destruction, or disclosure. Specific
@@ -627,7 +630,7 @@ requirements in this area could include the need to:
 - Check data integrity for critical variables
 
 3.6.4 Maintainability
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 Specify attributes of software that relate to the ease of maintenance of the
 software itself. There may be some requirement for certain modularity,
@@ -635,7 +638,7 @@ interfaces, complexity, etc. Requirements should not be placed here just
 because they are thought to be good design practices.
 
 3.6.5 Portability
-~~~~~~~~~~~~~~~~~
+-----------------
 
 Specify attributes of software that relate to the ease of porting the software
 to other host machines and/or operating systems. This may include:
@@ -651,7 +654,7 @@ A) Percentage of components with host-dependent code
 #. Use of a particular operating system
 
 3.7 Organizing the Specific Requirements
-----------------------------------------
+========================================
 
 .. Note:: This section (including sections 3.7.n) are not sections that should
           be included in your final document. Their purpose is to discuss how to
@@ -668,21 +671,21 @@ themselves to different organizations of requirements in section 3. Some of
 these organizations are described in the following sub-sections.
 
 3.7.1 System Mode
-~~~~~~~~~~~~~~~~~
+-----------------
 
 Some systems behave quite differently depending on the mode of operation. When
 organizing by mode there are two possible outlines. The choice depends on
 whether interfaces and performance are dependent on mode.
 
 3.7.2 User Class
-~~~~~~~~~~~~~~~~
+----------------
 
 Some systems provide different sets of functions to different classes of users.
 For example, an elevator control system presents different capabilities to
 passengers, maintenance workers, and firefighters.
 
 3.7.3 Objects
-~~~~~~~~~~~~~
+-------------
 
 Objects are real-world entities that have a counterpart within the system. For
 example, in a patient monitoring system, objects include patients, sensors,
@@ -693,7 +696,7 @@ objects may share attributes and services. These are grouped together as
 classes.
 
 3.7.4 Feature
-~~~~~~~~~~~~~
+-------------
 
 A feature is an externally desired service by the system that may require a
 sequence of inputs to effect the desired result. For example, in a telephone
@@ -701,7 +704,7 @@ system, features include local call, call forwarding, and conference call.
 Each feature is generally described in as sequence eof stimulus-response pairs.
 
 3.7.5 Stimulus
-~~~~~~~~~~~~~~
+--------------
 
 Some systems can be best organized by describing their functions in terms of
 stimuli. For example, the functions of an automatic aircraft landing system may
@@ -709,7 +712,7 @@ be organized into sections for loss of power, wind shear, sudden change in
 roll, vertical velocity excessive, etc.
 
 3.7.6 Response
-~~~~~~~~~~~~~~
+--------------
 
 Some systems can be best organized by describing all the functions in support
 of the generation of a response. For example, the functions of a personnel
@@ -718,7 +721,7 @@ with generating paychecks, all functions associated with generating a current
 list of employees, etc.
 
 3.7.7 Functional Hierarchy
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 When none of the above organizational schemes prove helpful, the overall
 functionality can be organized into a hierarchy of functions organized by
@@ -727,7 +730,7 @@ diagrams and data dictionaries can be used to show the relationships between
 and among the functions and data.
 
 3.8 Additional Comments
------------------------
+=======================
 
 Whenever a new SRS is contemplated, more than one of the organizational
 techniques given in 3.7 may be appropriate. In such cases, organize the
@@ -747,8 +750,9 @@ may be described in native language, in pseudocode, in a system definition
 language, or in four subsections titled: Introduction, Inputs, Processing,
 Outputs.
 
+----------------------------
 4. Change Management Process
-============================
+----------------------------
 
 Identify the change management process to be used to identify, log, evaluate,
 and update the SRS to reflect changes in project scope and requirements. How
@@ -757,14 +761,16 @@ call up and ask for something new? Does your team have to reach consensus? How
 do changes to requirements get submitted to the team? Formally in writing,
 email or phone call?
 
+---------------------
 5. Document Approvals
-=====================
+---------------------
 
 Identify the approvers of the SRS document. Approver name, signature, and date
 should be used.
 
+-------------------------
 6. Supporting Information
-=========================
+-------------------------
 
 The supporting information makes the SRS easier to use. It includes:
 
@@ -789,15 +795,16 @@ A. Sample I/O formats, descriptions of cost analysis studies, results of user su
 When Appendices are included, the SRS should explicitly state whether or not
 the Appendices are to be considered part of the requirements.
 
+-----------------------------------
 7. Alternate Outlines for Section 3
-===================================
+-----------------------------------
 
 Tables on the following pages provide alternate ways to structure section 3 on
 the specific requirements. You should pick the best one of these to organize
 section 3 requirements.
 
 Organized by Mode -- Version 1
-------------------------------
+==============================
 
 Requirements ordered by software mode, layout version 1.
 
@@ -833,7 +840,7 @@ Requirements ordered by software mode, layout version 1.
         3.7 Other Requirements
 
 Organized by Mode -- Version 2
-------------------------------
+==============================
 
 Requirements ordered by software mode, layout version 2.
 
@@ -869,7 +876,7 @@ Requirements ordered by software mode, layout version 2.
         3.7 Other Requirements
 
 Organized by User Class
------------------------
+=======================
 
 This outline is organized by different types of users, System administrators,
 Manogers, Clerks, etc.
@@ -906,7 +913,7 @@ Manogers, Clerks, etc.
         3.7 Other Requirements
 
 Organized by Object
--------------------
+===================
 
 Good if you did an object-oriented analysis as part of your requirements.
 
@@ -945,7 +952,7 @@ Good if you did an object-oriented analysis as part of your requirements.
         3.7 Other Requirements
 
 Organized by Feature
---------------------
+====================
 
 Good when there are clearly delimited feature sets.
 
@@ -981,7 +988,7 @@ Good when there are clearly delimited feature sets.
         3.7 Other Requirements
 
 Organized by Stimulus
----------------------
+=====================
 
 Good for event driven systems where the events form logical groupings.
 
@@ -1017,7 +1024,7 @@ Good for event driven systems where the events form logical groupings.
         3.7 Other Requirements
 
 Organized by Response
----------------------
+=====================
 
 Good for event driven systems where the responses form logical groupings.
 
@@ -1053,7 +1060,7 @@ Good for event driven systems where the responses form logical groupings.
         3.7 Other Requirements
 
 Organized by Functional Hierarchy
----------------------------------
+=================================
 
 Good if you have done structured analysis as part of your design.
 
@@ -1146,7 +1153,7 @@ Good if you have done structured analysis as part of your design.
         3.7 Other Requirements
 
 Showing Multiple Organizations
-------------------------------
+==============================
 
 Can’t decide? Then glob it all together.
 
@@ -1190,7 +1197,7 @@ Can’t decide? Then glob it all together.
         3.7 Other Requirements
 
 Organized by Use Case
----------------------
+=====================
 
 Good when following UML development.
 

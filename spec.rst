@@ -6,14 +6,15 @@ Open Source Software Specification Template
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Fri Sep 14 01:34:58 PDT 2012
-:Modified: Sun Sep 16 21:32:20 PDT 2012
+:Modified: Mon Sep 17 01:02:24 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
 .. contents::
 
+---------------
 1. Introduction
-===============
+---------------
 
 This template is based on the software specification used by Canonical for its
 Ubuntu Linux Distribution. This file is meant to be used as a guide for
@@ -58,8 +59,9 @@ A specification should be written with the following considerations:
   you're not a native speaker, co-editing the spec with somebody who is might
   be a good idea.
 
+------------
 2. Rationale
-============
+------------
 
 This section should be a description of why your project is being developed.
 What problem does it solve, and possibly, why other solutions are inadequate.
@@ -73,8 +75,9 @@ trying to express them in writing just doesn't feel right, or you are having
 trouble defining exactly what your project hopes to accomplish. This probably
 means that your are not exactly clear on what the problem is.
 
+------------
 3. Use Cases
-============
+------------
 
 Use cases are positive statements which (loosely) conform to a pattern like
 
@@ -86,8 +89,9 @@ Use cases are positive statements which (loosely) conform to a pattern like
 Specifically, describing the current unsatisfactory state of affairs is not a
 use case; that belongs in the Rationale section.
 
+-----------------
 4. Implementation
-=================
+-----------------
 
 This section is usually broken down into subsections, such as user interface
 requirements and pictures (photographs of drawings on paper work well).
@@ -99,19 +103,22 @@ this happened. This is important so that next iterations of the specification
 (and new specifications that touch upon this subject) can use the specification
 as a reference.
 
+----------
 5. Summary
-==========
+----------
 
 The summary should not attempt to say why the spec is being defined, just what
 is being specified.
 
+---------------------
 6. Outstanding Issues
-=====================
+---------------------
 
 Use this section to document issues found while writing the specification, or
 issues found while implementing the specification.
 
+-------------------------
 7. Specification Examples
-=========================
+-------------------------
 
 Example specifications that use this template.
