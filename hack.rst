@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Sep 17 23:55:34 PDT 2012
+:Modified: Tue Sep 18 12:06:28 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -23,39 +23,40 @@ to get started working on the doc-templates project.
 1.1 How to use this file
 ========================
 
-This file can be used just as it is, with a little modification to change
-"doc-templates" to whatever is the name of your project. You could also
-reorganize the sections to your liking. You are free to do what you like.
-
 Below you will find the project management framework I use for my own projects.
 You might like it, or you might think it is crap, but it is a start and a great
 example of how to set something similar up.
+
+To use this file, simply search and replace "doc-templates" with the name of
+your project. You could also reorganize the sections to your liking. You are
+free to do what you like.
+
+For a primer on the reStructuredText style used within this file see `3.
+Documentation`_.
+
+**Commentary**
 
 Each section has a commentary subsection that should be completely removed before
 committing your version of the file to your projects repo. The comentary
 section is my opinion on why a the section exists without integrating that
 discussion into the section and making it more difficult to parse out.
 
-For a primer on the reStructuredText style used within this file see `3.
-Documentation`_.
-
-------------------------------------
-2. Git version control with git-flow
-------------------------------------
+------------------
+2. Version control
+------------------
 
 git_ is used to track changes within the source tree. github_ is used to host
 the project as well as track issues. For an introduction to using git and
 Github, see github-bootcamp_.
 
-2.x Commentary
-==============
+**Commentary**
 
 I use git-flow on most of my projects because it allows me to separete work on
-features into nice and neat little packaged trees that I can move arround to my
+features into nice and neat branches in git that I can mess arround with to my
 hearts content. It does have a very slight learning curve, but once you get the
-hang of it it is very nice, especially with the plugins.
+hang of it it is very nice, especially with the git extensions.
 
-2.1 Workflow overview
+2.1 Git with git-flow
 =====================
 
 gpup uses the git-flow_ branching model as outlined by `Vincent Driessen`_ and
@@ -322,15 +323,14 @@ The "i####" is a condensed form "issue1000".
 Use this section to introduce the reader on the documentation procedure for
 your project.
 
-3.x Commentary
-==============
+**Commentary**
 
-For my projects, I always use reStructuredText as it has the best support for
-many output formats, including pdf and html.
+For my projects, I always use reStructuredText for documentation as it has the
+best support for many output formats, including pdf and html.
 
 One thing I like to do is have a ":Created:" and ":Modified:" metadata at the
 start of every documentation file to keep track of dates. My favorite text
-editor, vim, can be configured to automatically adjust the ":Modified:" date
+editor, vim, can be configured to automatically reset the ":Modified:" date
 everytime new changes are saved to the file.
 
 3.1 reStructuredText
@@ -407,6 +407,12 @@ notice:
 * The "File title" is precisely surrounded by padded "="
 * The contributors section should contain all contributors to the file
   containing the title block.
+
+3.1.3 Links
+-----------
+
+* Do not use embedded links. This is distracting when reading the source of the
+  reStructuredText file.
 
 .. _git: http://git-scm.com/
 .. _github: http://github.com/
