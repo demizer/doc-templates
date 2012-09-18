@@ -40,15 +40,23 @@ For a primer on the reStructuredText style used within this file see `3.
 Documentation`_.
 
 ------------------------------------
-2. Git Version Control with git-flow
+2. Git version control with git-flow
 ------------------------------------
 
 git_ is used to track changes within the source tree. github_ is used to host
 the project as well as track issues. For an introduction to using git and
 Github, see github-bootcamp_.
 
-Workflow Overview
-=================
+2.x Commentary
+==============
+
+I use git-flow on most of my projects because it allows me to separete work on
+features into nice and neat little packaged trees that I can move arround to my
+hearts content. It does have a very slight learning curve, but once you get the
+hang of it it is very nice, especially with the plugins.
+
+2.1 Workflow overview
+=====================
 
 gpup uses the git-flow_ branching model as outlined by `Vincent Driessen`_ and
 provided by the git-flow_ extensions. You don't really need the extensions to
@@ -89,8 +97,8 @@ use the branching model, but they make things a little easier.
   should be descriptive and include itemized changes made from the previous
   release.
 
-The Workflow
-============
+2.2 The workflow
+================
 
 Here is example workflow for the gpup project. These commands show the standard
 git commands as well as the git-flow_ extensions.
@@ -167,8 +175,8 @@ git commands as well as the git-flow_ extensions.
 
             $ git push origin develop
 
-Master Branch
--------------
+2.2.1 Master Branch
+-------------------
 
 The *master* branch is primarily a *release branch*. Changes in the master
 branch are only committed on every release revision as specified in spec.md_.
@@ -182,8 +190,8 @@ private develop branch to the gpup project maintainer. Tagging allows snapshots
 to be taken of the git tree and presented as downloads on github. The tag
 message should include a list of changes since the the last release.
 
-Principles for master branch releases
-`````````````````````````````````````
+2.2.1.1 Principles for master branch releases
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Only official project members can interact with the official master branch.
    Official project members are decided by the project maintainer. For
@@ -202,8 +210,8 @@ Principles for master branch releases
    branch based off of the master branch. Once the fix is implemented, the
    changes are merged back into both master and develop.
 
-Master branch workflow
-``````````````````````
+2.2.1.2 Master branch workflow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please observe the following workflow when interacting with the master branch
 and developing *feature-x*.
@@ -217,8 +225,8 @@ and developing *feature-x*.
 
     b. Using git
 
-A sample tag message
-~~~~~~~~~~~~~~~~~~~~
+2.2.1.2.1 A sample tag message
+++++++++++++++++++++++++++++++
 
 ::
 
@@ -229,8 +237,8 @@ A sample tag message
     * Fixed bug in retroactive flow mode database.
     * Fixed issue #201: Time warp control know doo-hicky.
 
-Develop Branch
---------------
+2.2.2 Develop Branch
+--------------------
 
 The develop branch is the staging area for development. When a new feature is
 to be added to the project, any number of branches can be made of the develop
@@ -255,8 +263,8 @@ example workflow for the develop branch:
 
 8. The *feature-a* branch is deleted.
 
-Topic Branch
-------------
+2.2.3 Topic Branch
+------------------
 
 Topic branches are to be created from the develop branch and they must have
 specific names. Development in topic branches must be specific and to the
