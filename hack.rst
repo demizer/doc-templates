@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Tue Sep 18 12:06:28 PDT 2012
+:Modified: Tue Sep 18 12:28:08 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -320,27 +320,71 @@ The "i####" is a condensed form "issue1000".
 3. Documentation
 ----------------
 
-Use this section to introduce the reader on the documentation procedure for
-your project.
+reStructuredText is used for documentation in the doc-templates project.
+reStructuredText is well supported by the Python community and has many output
+formats including pdf and html.
 
 **Commentary**
 
-For my projects, I always use reStructuredText for documentation as it has the
-best support for many output formats, including pdf and html.
+Use this section to introduce the reader on the documentation procedure for
+your project.
 
-One thing I like to do is have a ":Created:" and ":Modified:" metadata at the
-start of every documentation file to keep track of dates. My favorite text
-editor, vim, can be configured to automatically reset the ":Modified:" date
-everytime new changes are saved to the file.
+3.1 Title block
+===============
 
-3.1 reStructuredText
-====================
+The start of all reStructuredText files should be as follows:
 
-The following considerations should be used when writing documentation in
-reStructuredText for this project.
+::
 
-3.1.1 Sections
---------------
+    .. -*- coding: utf-8 -*-
+
+    ==========
+    File title
+    ==========
+
+    :Contributors: 2011-2012 author1 (contact)
+                   2012      author2 (contact)
+    :Created: Sun Sep 16 23:29:39 PDT 2012
+    :Modified: Mon Sep 17 23:17:27 PDT 2012
+    :Copyright: This document has been placed in the public domain.
+    :Revision: 1.0.0
+
+    .. contents::
+
+notice:
+
+* The "File title" is precisely surrounded by padded "="
+* The contributors section should contain all contributors to the file
+  containing the title block.
+
+3.1.1 Automatic Modified date update
+------------------------------------
+
+The best programming editors can be configured to automatically update
+timestamps within a file. This section will detail how to setup this feature in
+the most popular editors.
+
+3.1.1.1 VIM
++++++++++++
+
+Add the following to your vim configuration:
+
+::
+
+    function! LastModified()
+        if &modified
+            let save_cursor = getpos(".")
+            let n = min([10, line("$")])
+            keepjumps exe '1,' . n . 's#^\(.\{,10}:Modified: \).*#\1' .
+                        \ strftime("%a %b %d %H:%M:%S %Z %Y") . '#e'
+            call histdel('search', -1)
+            call setpos('.', save_cursor)
+        endif
+    endfunction
+    au BufWritePre * call LastModified()
+
+3.2 Sections
+============
 
 In addition to the reStructuredText standard, please use these guidlines when
 writing sections for this projects documentation:
@@ -351,8 +395,8 @@ writing sections for this projects documentation:
 * The file title should have all words capitalized.
 * Section levels should start with a number consecutive number pattern.
 
-3.1.1.1 Adornment
-~~~~~~~~~~~~~~~~~
+3.2.1 Adornment
+---------------
 
 Please use the following patterns for each section level:
 
@@ -380,36 +424,8 @@ Please use the following patterns for each section level:
     1.1.1.1.1.1 Level 6
     *******************
 
-3.1.2 Title block
------------------
-
-The start of all reStructuredText files should be as follows:
-
-::
-
-    .. -*- coding: utf-8 -*-
-
-    ==========
-    File title
-    ==========
-
-    :Contributors: 2011-2012 author1 (contact)
-                   2012      author2 (contact)
-    :Created: Sun Sep 16 23:29:39 PDT 2012
-    :Modified: Mon Sep 17 23:17:27 PDT 2012
-    :Copyright: This document has been placed in the public domain.
-    :Revision: 1.0.0
-
-    .. contents::
-
-notice:
-
-* The "File title" is precisely surrounded by padded "="
-* The contributors section should contain all contributors to the file
-  containing the title block.
-
-3.1.3 Links
------------
+3.3 Links
+=========
 
 * Do not use embedded links. This is distracting when reading the source of the
   reStructuredText file.
