@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Sep 17 00:43:04 PDT 2012
+:Modified: Mon Sep 17 23:55:34 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -19,6 +19,25 @@ doc-templates Developer Documentation
 Hello and welcome! Thank you for your interest in contributing to the
 doc-templates project. In this document you will find the information you need
 to get started working on the doc-templates project.
+
+1.1 How to use this file
+========================
+
+This file can be used just as it is, with a little modification to change
+"doc-templates" to whatever is the name of your project. You could also
+reorganize the sections to your liking. You are free to do what you like.
+
+Below you will find the project management framework I use for my own projects.
+You might like it, or you might think it is crap, but it is a start and a great
+example of how to set something similar up.
+
+Each section has a commentary subsection that should be completely removed before
+committing your version of the file to your projects repo. The comentary
+section is my opinion on why a the section exists without integrating that
+discussion into the section and making it more difficult to parse out.
+
+For a primer on the reStructuredText style used within this file see `3.
+Documentation`_.
 
 ------------------------------------
 2. Git Version Control with git-flow
