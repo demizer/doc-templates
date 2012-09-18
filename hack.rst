@@ -315,6 +315,99 @@ The "i####" is a condensed form "issue1000".
 
 7. Send pull request
 
+----------------
+3. Documentation
+----------------
+
+Use this section to introduce the reader on the documentation procedure for
+your project.
+
+3.x Commentary
+==============
+
+For my projects, I always use reStructuredText as it has the best support for
+many output formats, including pdf and html.
+
+One thing I like to do is have a ":Created:" and ":Modified:" metadata at the
+start of every documentation file to keep track of dates. My favorite text
+editor, vim, can be configured to automatically adjust the ":Modified:" date
+everytime new changes are saved to the file.
+
+3.1 reStructuredText
+====================
+
+The following considerations should be used when writing documentation in
+reStructuredText for this project.
+
+3.1.1 Sections
+--------------
+
+In addition to the reStructuredText standard, please use these guidlines when
+writing sections for this projects documentation:
+
+* Sections should go no further than six levels deep.
+* Section titles and subtitles should not have consecutive capitalized words.
+  Only the first word should be capitalized.
+* The file title should have all words capitalized.
+* Section levels should start with a number consecutive number pattern.
+
+3.1.1.1 Adornment
+~~~~~~~~~~~~~~~~~
+
+Please use the following patterns for each section level:
+
+::
+    ==========
+    File Title
+    ==========
+
+    ----------
+    1. Level 1
+    ----------
+
+    1.1 Level 2
+    ===========
+
+    1.1.1 Level 3
+    -------------
+
+    1.1.1.1 Level 4
+    ~~~~~~~~~~~~~~~
+
+    1.1.1.1.1 Level 5
+    +++++++++++++++++
+
+    1.1.1.1.1.1 Level 6
+    *******************
+
+3.1.2 Title block
+-----------------
+
+The start of all reStructuredText files should be as follows:
+
+::
+
+    .. -*- coding: utf-8 -*-
+
+    ==========
+    File title
+    ==========
+
+    :Contributors: 2011-2012 author1 (contact)
+                   2012      author2 (contact)
+    :Created: Sun Sep 16 23:29:39 PDT 2012
+    :Modified: Mon Sep 17 23:17:27 PDT 2012
+    :Copyright: This document has been placed in the public domain.
+    :Revision: 1.0.0
+
+    .. contents::
+
+notice:
+
+* The "File title" is precisely surrounded by padded "="
+* The contributors section should contain all contributors to the file
+  containing the title block.
+
 .. _git: http://git-scm.com/
 .. _github: http://github.com/
 .. _github-bootcamp: https://help.github.com/categories/54/articles
