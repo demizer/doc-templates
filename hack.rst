@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Tue Sep 18 12:28:08 PDT 2012
+:Modified: Thu Sep 20 09:05:03 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -176,7 +176,7 @@ git commands as well as the git-flow_ extensions.
 
             $ git push origin develop
 
-2.2.1 Master Branch
+2.2.1 Master branch
 -------------------
 
 The *master* branch is primarily a *release branch*. Changes in the master
@@ -196,8 +196,8 @@ message should include a list of changes since the the last release.
 
 1. Only official project members can interact with the official master branch.
    Official project members are decided by the project maintainer. For
-   contributing features or changes as a contributing member, see `Develop
-   Branch`_ section.
+   contributing features or changes as a contributing member, see `2.2.2 Develop
+   branch`_ section.
 
 2. The master branch is solely for tested and "stable" code. All new features to
    be merged into master must be tested and proved in the develop branch.
@@ -238,7 +238,7 @@ and developing *feature-x*.
     * Fixed bug in retroactive flow mode database.
     * Fixed issue #201: Time warp control know doo-hicky.
 
-2.2.2 Develop Branch
+2.2.2 Develop branch
 --------------------
 
 The develop branch is the staging area for development. When a new feature is
@@ -264,7 +264,7 @@ example workflow for the develop branch:
 
 8. The *feature-a* branch is deleted.
 
-2.2.3 Topic Branch
+2.2.3 Topic branch
 ------------------
 
 Topic branches are to be created from the develop branch and they must have
@@ -357,7 +357,7 @@ notice:
 * The contributors section should contain all contributors to the file
   containing the title block.
 
-3.1.1 Automatic Modified date update
+3.1.1 Automatic modified date update
 ------------------------------------
 
 The best programming editors can be configured to automatically update
@@ -365,7 +365,7 @@ timestamps within a file. This section will detail how to setup this feature in
 the most popular editors.
 
 3.1.1.1 VIM
-+++++++++++
+~~~~~~~~~~~
 
 Add the following to your vim configuration:
 
@@ -401,6 +401,7 @@ writing sections for this projects documentation:
 Please use the following patterns for each section level:
 
 ::
+
     ==========
     File Title
     ==========
