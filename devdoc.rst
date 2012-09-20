@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Thu Sep 20 09:05:03 PDT 2012
+:Modified: Thu Sep 20 09:12:08 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -108,45 +108,45 @@ git commands as well as the git-flow_ extensions.
 
 2. Clone to your server
 
-   ::
+::
 
-        $ git clone https://<you>@github.com/<you>/gpup.git
+    $ git clone https://<you>@github.com/<you>/gpup.git
 
 3. Change into the project directory
 
-   ::
+::
 
-        $ cd gpup/
+    $ cd gpup/
 
 4. Initialize the develop branch
 
     a. Using git-flow
 
-        ::
+    ::
 
-            $ git flow init -d
+        $ git flow init -d
 
     b. Using git
 
-        ::
+    ::
 
-            $ <optional> git branch -a
+        $ <optional> git branch -a
 
-            $ git checkout -b develop origin/develop
+        $ git checkout -b develop origin/develop
 
 5. Branch for new feature
 
     a. Using git-flow
 
-        ::
+    ::
 
-            $ git flow feature start <new_feature>
+        $ git flow feature start <new_feature>
 
     b. Using git
 
-        ::
+    ::
 
-            $ git branch -b feature/<new_feature> develop
+        $ git branch -b feature/<new_feature> develop
 
 6. Edit / Commit
 
@@ -154,27 +154,27 @@ git commands as well as the git-flow_ extensions.
 
     a. Using git-flow
 
-        ::
+    ::
 
-            $ <optional> git flow feature pull <feature>
+        $ <optional> git flow feature pull <feature>
 
-            $ git flow feature publish <feature>
+        $ git flow feature publish <feature>
 
-            <Open pull request, and get changes merged>
+        <Open pull request, and get changes merged>
 
-            $ <optional> git flow feature finish <new_feature>
+        $ <optional> git flow feature finish <new_feature>
 
     b. Using git
 
-        ::
+    ::
 
-            $ git checkout develop
+        $ git checkout develop
 
-            $ git merge --no-ff feature/<new_feature>
+        $ git merge --no-ff feature/<new_feature>
 
-            $ git branch -d feature/<new_feature>
+        $ git branch -d feature/<new_feature>
 
-            $ git push origin develop
+        $ git push origin develop
 
 2.2.1 Master branch
 -------------------
