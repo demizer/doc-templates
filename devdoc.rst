@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Thu Sep 20 12:47:32 PDT 2012
+:Modified: Fri Sep 21 00:26:35 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -16,30 +16,48 @@ doc-templates Developer Documentation
 1. Introduction
 ---------------
 
-Hello and welcome! Thank you for your interest in contributing to the
-doc-templates project. In this document you will find the information you need
-to get started working on the doc-templates project.
+Hello and welcome to the developer documentation for the doc-templates project!
+In this file you will learn how to setup your environment to work on the
+doc-templates project. This includes version control, editors, and
+documentation.
 
 1.1 How to use this file
 ========================
 
-Below you will find the project management framework I use for my own projects.
-You might like it, or you might think it is crap, but it is a start and a great
-example of how to set something similar up.
-
-To use this file, simply search and replace "doc-templates" with the name of
-your project. You could also reorganize the sections to your liking. You are
-free to do what you like.
-
-For a primer on the reStructuredText style used within this file see `3.
+This file's source is written in reStructuredText and is easily available in
+any format you like. HTML and PDF are viewable from the project website. For a
+primer on the reStructuredText style used within this file see `3.
 Documentation`_.
+
+This file can be read from start to finish, or at specific sections.
 
 **Commentary**
 
+Below you will find the developer documentation for the doc-templates
+documentation framework that I use for all of my own projects. To use this
+file, simply search and replace "doc-templates" with the name of your project.
+You could also reorganize the sections to your liking. You are free to do what
+you like.
+
 Each section has a commentary subsection that should be completely removed before
-committing your version of the file to your projects repo. The comentary
-section is my opinion on why a the section exists without integrating that
+committing your version of the file to your projects repo. The commentary
+section is my opinion on why a section exists without integrating that
 discussion into the section and making it more difficult to parse out.
+
+The authors of the doc-templates project humbly request that the following
+section be included with your documentation to encourage contributions to the
+upstream documentation framework.
+
+1.2 How to contribute to this file
+==================================
+
+Please see the `3. Documentation`_ section for style guidelines for contributing
+to this documentation.
+
+If you do decide to write a new section that will be useful in general to the
+upstream `doc templates project`_, please consider sending a pull request to
+that project. For example, if you use a different version control or a
+different editor that is not included in the upstream template, write it!
 
 ------------------
 2. Version control
@@ -51,8 +69,8 @@ Github, see github-bootcamp_.
 
 **Commentary**
 
-I use git-flow on most of my projects because it allows me to separete work on
-features into nice and neat branches in git that I can mess arround with to my
+I use git-flow on most of my projects because it allows me to separate work on
+features into nice and neat branches in git that I can mess around with to my
 hearts content. It does have a very slight learning curve, but once you get the
 hang of it it is very nice, especially with the git extensions.
 
@@ -427,3 +445,4 @@ Please use the following patterns for each section level:
 .. _git-flow: https://github.com/nvie/gitflow/
 .. _spec.md: https://github.com/demizer/gpup/tree/master/doc/spec.md
 .. _tagged: http://learn.github.com/p/tagging.html
+.. _doc-templates project: http://github.com/demizer/doc-templates
