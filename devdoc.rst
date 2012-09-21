@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Fri Sep 21 00:26:35 PDT 2012
+:Modified: Fri Sep 21 00:38:06 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -196,7 +196,7 @@ work included on the next release revision. The next step is to either merge
 the changes into the master branch and tag it or send a pull request on your
 private develop branch to the gpup project maintainer. Tagging allows snapshots
 to be taken of the git tree and presented as downloads on github. The tag
-message should include a list of changes since the the last release.
+message should include a list of changes since the last release.
 
 2.2.1.1 Principles for master branch releases
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -209,12 +209,12 @@ message should include a list of changes since the the last release.
 2. The master branch is solely for tested and "stable" code. All new features to
    be merged into master must be tested and proved in the develop branch.
 
-3. A meaningful tag message must acompany the merged changes including changes
+3. A meaningful tag message must accompany the merged changes including changes
    made from the last release.
 
 4. This tagged branch is made available for download from github.
 
-5. Any critical fixes needed on stable code are to be devolped in a *hotfix*
+5. Any critical fixes needed on stable code are to be developed in a *hotfix*
    branch based off of the master branch. Once the fix is implemented, the
    changes are merged back into both master and develop.
 
