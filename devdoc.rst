@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Fri Sep 21 12:22:30 PDT 2012
+:Modified: Sat Sep 22 10:29:33 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -163,7 +163,7 @@ git commands as well as the git-flow_ extensions.
 
 6. Edit / Commit
 
-7. Push changes to remote/develop
+7. Push changes to remote
 
    ::
 
@@ -444,6 +444,6 @@ Please use the following patterns for each section level:
 .. _github-bootcamp: https://help.github.com/categories/54/articles
 .. _Vincent Driessen: http://nvie.com/posts/a-successful-git-branching-model/
 .. _git-flow: https://github.com/nvie/gitflow/
-.. _spec.md: https://github.com/demizer/gpup/tree/master/doc/spec.md
+.. _spec.md: https://github.com/demizer/doc-templates/blob/master/doc/spec.rst
 .. _tagged: http://learn.github.com/p/tagging.html
 .. _doc-templates project: http://github.com/demizer/doc-templates
