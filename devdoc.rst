@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Fri Sep 21 00:38:06 PDT 2012
+:Modified: Fri Sep 21 12:22:30 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -224,14 +224,15 @@ message should include a list of changes since the last release.
 Please observe the following workflow when interacting with the master branch
 and developing *feature-x*.
 
-1. Test feature x (depending on testing environment for the project. See
-   spec.md_.
+1. Run unit tests on feature-x.
 
-2. Merge feature x into master
+2. Merge feature-x into master
 
-    a. Using git-flow
+   ::
 
-    b. Using git
+    Using git-flow:
+
+    Using git:
 
 2.2.1.2.1 A sample tag message
 ++++++++++++++++++++++++++++++
@@ -358,7 +359,7 @@ The start of all reStructuredText files should be as follows:
 
     .. contents::
 
-notice:
+Notice:
 
 * The "File title" is precisely surrounded by padded "="
 * The contributors section should contain all contributors to the file
