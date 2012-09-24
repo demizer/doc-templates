@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 =====================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Sep 24 13:00:55 PDT 2012
+:Modified: Mon Sep 24 13:07:31 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -559,7 +559,7 @@ Implementation metadata
 
 When a feature is laid out in the implementation section and considered ready
 for development, metadata should be included to inform readers of
-implementation progress. Use the following as a guide:
+implementation progress.
 
 .. code:: rst
 
@@ -571,9 +571,9 @@ Data structures
 
 1. Design for data structures should be written in a general form such as:
 
-::
+   ::
 
-    calendar:
+    Calendar:
         name       string
         weekstart  string
         time       time
@@ -582,6 +582,13 @@ Data structures
         nextpos    time
         items      type calitem
         viwe       type view
+
+#. Properties of your data structure that apply to the implementation of it
+   should be specified using metadata. Such as,
+
+   ::
+
+    :Scope: Public
 
 Guidelines for devdoc.rst
 =========================
