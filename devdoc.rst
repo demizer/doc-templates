@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Sun Sep 23 21:05:05 PDT 2012
+:Modified: Sun Sep 23 22:06:26 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -337,7 +337,18 @@ formats including pdf and html.
 Use this section to introduce the reader on the documentation procedure for
 your project.
 
-3.1 Title block
+3.1 Date Format
+===============
+
+The date format used for all date information in all document files is as
+follows:
+
+::
+
+    Date: Sun Sep 23 22:04:55 PDT 2012
+    Format: date +"%a %b %d %H:%M:%S %Z %Y"
+
+3.2 Title block
 ===============
 
 The start of all reStructuredText files should be as follows:
@@ -365,14 +376,14 @@ Notice:
 * The contributors section should contain all contributors to the file
   containing the title block.
 
-3.1.1 Automatic modified date update
+3.2.1 Automatic modified date update
 ------------------------------------
 
 The best programming editors can be configured to automatically update
 timestamps within a file. This section will detail how to setup this feature in
 the most popular editors.
 
-3.1.1.1 VIM
+3.2.1.1 VIM
 ~~~~~~~~~~~
 
 Add the following to your vim configuration:
@@ -391,7 +402,7 @@ Add the following to your vim configuration:
     endfunction
     au BufWritePre * call LastModified()
 
-3.2 Sections
+3.3 Sections
 ============
 
 In addition to the reStructuredText standard, please use these guidlines when
@@ -403,7 +414,7 @@ writing sections for this projects documentation:
 * The file title should have all words capitalized.
 * Section levels should start with a number consecutive number pattern.
 
-3.2.1 Adornment
+3.3.1 Adornment
 ---------------
 
 Please use the following patterns for each section level:
@@ -433,7 +444,7 @@ Please use the following patterns for each section level:
     1.1.1.1.1.1 Level 6
     *******************
 
-3.3 Links
+3.4 Links
 =========
 
 * Do not use embedded links. This is distracting when reading the source of the
