@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 =====================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Sep 24 12:41:49 PDT 2012
+:Modified: Mon Sep 24 13:00:55 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -465,7 +465,7 @@ Contributors list
 
 The contributors section outlines all the contributors per year. This section
 should be updated by the contributor himself and the maintainer should make
-sure this informationn is up to date before excepting patches.
+sure this information is up to date before excepting patches.
 
 Automatic modified date update
 ------------------------------
@@ -546,7 +546,42 @@ Links
 Guidelines for spec.rst
 =======================
 
-TBD
+The following guidelines are for the specification document.
+
+Implementation
+--------------
+
+The implementation section in `spec.rst`_ is meant for developers writing the
+code.
+
+Implementation metadata
+~~~~~~~~~~~~~~~~~~~~~~~
+
+When a feature is laid out in the implementation section and considered ready
+for development, metadata should be included to inform readers of
+implementation progress. Use the following as a guide:
+
+.. code:: rst
+
+    :Assigned: Jesus Alvarez
+    :Completed: Sun Sep 23 22:02:42 PDT 2012
+
+Data structures
+~~~~~~~~~~~~~~~
+
+1. Design for data structures should be written in a general form such as:
+
+::
+
+    calendar:
+        name       string
+        weekstart  string
+        time       time
+        initialpos time
+        prevpos    time
+        nextpos    time
+        items      type calitem
+        viwe       type view
 
 Guidelines for devdoc.rst
 =========================
