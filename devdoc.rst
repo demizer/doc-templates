@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 =====================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Sep 24 00:08:26 PDT 2012
+:Modified: Mon Sep 24 12:39:24 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -84,6 +84,9 @@ before submitting patches or a pull request.
 Guidelines for new developers
 =============================
 
+Please take a minute and quickly read through the following guidelines for
+contributing to the doc-templates project.
+
 Documentation
 -------------
 
@@ -94,16 +97,32 @@ Documentation
 #. Add your name to the contributors list. See `Contributors list`_ for
    more information.
 
+Version control tips for developers
+-----------------------------------
+
+* We use git-flow as the branching model for the doc-templates project. See
+  `Git with git-flow`_
+
 Guidelines for maintainers
 ==========================
+
+Maintainers or developers with official repository access, please read and
+understand the following guidelines.
 
 Documentation
 -------------
 
-1. Make sure the patches to the project are properly documentated. See `
+1. Make sure the patches to the project are properly documentated. See
+   `Documentation style guide`_.
 
 #. Make sure any new contributors for the year have added their name to the
    contributor list. See `Contributors list`_ for more information.
+
+Version control tips for maintainers
+------------------------------------
+
+* We use git-flow as the branching model for the doc-templates project. See
+  `Git with git-flow`_
 
 ---------------
 Version control
@@ -397,7 +416,8 @@ follows:
 Title block
 ===========
 
-The first block of text in all documentation files should be as follows:
+The first block of text in all documentation files should resemble the
+following:
 
 .. code:: rst
 
@@ -440,11 +460,6 @@ The first block of text in all documentation files should be as follows:
     Rationale
     =========
 
-Title block metadata
---------------------
-
-* The "File title" is precisely surrounded by padded "="
-
 Contributors list
 -----------------
 
@@ -484,11 +499,13 @@ Sections
 In addition to the reStructuredText standard, please use these guidlines when
 writing sections for this projects documentation:
 
-* Sections should go no further than six levels deep.
-* Section titles and subtitles should not have consecutive capitalized words.
-  Only the first word should be capitalized.
-* The file title should have all words capitalized.
-* Section levels should start with a number consecutive number pattern.
+1. Sections should go no further than six levels deep.
+#. Section titles and subtitles should not have consecutive capitalized words.
+#. Only the first word should be capitalized.
+#. The file title should have all words capitalized.
+#. Section levels should start with a number consecutive number pattern.
+#. Sections titles should be distinct.
+#. The "adornment" should be as long as the title.
 
 Adornment
 ---------
@@ -525,9 +542,6 @@ Links
 
 * Do not use embedded links. This is distracting when reading the source of the
   reStructuredText file.
-
-Specification implementation section
-====================================
 
 .. _git: http://git-scm.com/
 .. _github: http://github.com/
