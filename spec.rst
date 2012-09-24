@@ -6,7 +6,7 @@ Open Source Software Specification Template
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Fri Sep 14 01:34:58 PDT 2012
-:Modified: Sun Sep 23 21:04:44 PDT 2012
+:Modified: Sun Sep 23 21:41:47 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -86,12 +86,22 @@ Use cases are positive statements which (loosely) conform to a pattern like
 * The steps they go through
 * The positive result
 
+**Commentary**
+
 Specifically, describing the current unsatisfactory state of affairs is not a
 use case; that belongs in the Rationale section.
 
 -----------------
 4. Implementation
 -----------------
+
+This section contains the implementation details of the use cases outlined
+above. Design features such as sketches of the UI and data structure
+information are contained in this section. Also identified here are any
+discussions for decisions related to selecting a specific implementation
+strategy for a use case such as external dependencies.
+
+**Commentary**
 
 This section is usually broken down into subsections, such as user interface
 requirements and pictures (photographs of drawings on paper work well).
