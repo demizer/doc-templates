@@ -6,11 +6,9 @@ Open Source Software Specification Template
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Fri Sep 14 01:34:58 PDT 2012
-:Modified: Mon Sep 17 01:02:24 PDT 2012
+:Modified: Sun Sep 23 21:04:44 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
-
-.. contents::
 
 ---------------
 1. Introduction
@@ -58,6 +56,8 @@ A specification should be written with the following considerations:
 * Specifications should be written in clear, concise and correct English. If
   you're not a native speaker, co-editing the spec with somebody who is might
   be a good idea.
+
+.. contents::
 
 ------------
 2. Rationale

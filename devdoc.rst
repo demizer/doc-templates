@@ -6,11 +6,9 @@ doc-templates Developer Documentation
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Sat Sep 22 10:29:33 PDT 2012
+:Modified: Sun Sep 23 21:05:05 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
-
-.. contents::
 
 ---------------
 1. Introduction
@@ -20,6 +18,8 @@ Hello and welcome to the developer documentation for the doc-templates project!
 In this file you will learn how to setup your environment to work on the
 doc-templates project. This includes version control, editors, and
 documentation.
+
+.. contents::
 
 1.1 How to use this file
 ========================
