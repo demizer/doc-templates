@@ -6,7 +6,7 @@ doc-templates Developer Documentation
 =====================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Sep 24 12:39:24 PDT 2012
+:Modified: Mon Sep 24 12:41:49 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -542,6 +542,21 @@ Links
 
 * Do not use embedded links. This is distracting when reading the source of the
   reStructuredText file.
+
+Guidelines for spec.rst
+=======================
+
+TBD
+
+Guidelines for devdoc.rst
+=========================
+
+TBD
+
+Guidelines for todo.rst
+=======================
+
+TBD
 
 .. _git: http://git-scm.com/
 .. _github: http://github.com/
