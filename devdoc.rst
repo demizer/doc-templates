@@ -415,31 +415,28 @@ following:
     :Created: Sun Sep 16 23:29:39 PDT 2012
     :Modified: Sun Sep 23 23:48:41 PDT 2012
     :Copyright: This document has been placed in the public domain.
-    :Revision: 1.0.0
-
-    ------------
-    Contributors
-    ------------
-
-    The following people and organizations have contributed to this document.
-    We appreciate their help very much for if it wasn't for them this document
-    wouldn't exist.
-
-    Contributions for 2011
-    ======================
-
-    1. Jesus Alvarez (github.com/demizer)
-
-    Contributions for 2012
-    ======================
-
-    1. Jesus Alvarez (github.com/demizer)
-    #. Jose Quervo (tequila.net/jose)
 
     Introduction
     ============
 
     .. contents::
+
+    Contributors
+    ============
+
+    The following people and organizations have contributed to this document.
+    We appreciate their help very much for if it wasn't for them this document
+    wouldn't exist.
+
+    ::
+
+        2011-2012 :: Jesus Alvarez (github.com/demizer)
+
+            Main author and maintainer.
+
+        2011      :: Jose Quervo (tequila.com/jose)
+
+            Stress relief.
 
     Rationale
     =========
