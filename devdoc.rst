@@ -102,20 +102,14 @@ Guidelines for maintainers
 Maintainers or developers with official repository access, please read and
 understand the following guidelines.
 
-Documentation
--------------
-
 1. Make sure the patches to the project are properly documentated. See
    `Documentation style guide`_.
 
 #. Make sure any new contributors for the year have added their name to the
    contributor list. See `Contributors list`_ for more information.
 
-Version control tips for maintainers
-------------------------------------
-
-* We use git-flow as the branching model for the doc-templates project. See
-  `Git with git-flow`_
+#. We use git-flow as the branching model for the doc-templates project. See
+   `Git with git-flow`_
 
 ---------------
 Version control
