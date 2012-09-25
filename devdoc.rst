@@ -1,10 +1,12 @@
 .. -*- coding: utf-8 -*-
-=====================================
-doc-templates Developer Documentation
-=====================================
+.. sectnum::
+
+================================
+Developer Documentation Template
+================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Sep 24 21:14:58 PDT 2012
+:Modified: Tue Sep 25 13:10:24 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
