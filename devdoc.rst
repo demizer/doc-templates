@@ -314,32 +314,39 @@ Develop branch workflow
 
 8. The *feature-a* branch is deleted.
 
-Topic branch
-------------
+Feature branch
+--------------
 
-Topic branches are to be created from the develop branch and they must have
-specific names. Development in topic branches must be specific and to the
+Feature branches are to be created from the develop branch and they must have
+specific names. Development in feature branches must be specific and to the
 point. If during development, another issue crops up, then create a new branch
-and pursue it there. There are two primary reasons for creation of a topic
-branch, development of a feature, or a bugfix. If working on a feature, the
-topic branch description should be named as follows:
+and pursue it there. There are two primary reasons for creation of a feature
+branch, development of a feature, or a bugfix.
+
+If creating a branch to develop a feature from spec.rst_, then include the
+projected release number for that feature from the spec. For example:
 
 .. code:: bash
 
-    $ git branch -b v0.1-feature
+    # Using git:
 
-The version number of the feature is pulled from this specification.
+        $ git branch -b 0.1-feature
+
+    # Using git-flow:
+
+        $ git flow 0.1-feature
 
 If creating a bugfix branch, the issue number from github should be referenced
 in the description:
 
 .. code:: bash
 
-    $ git branch -b i1000-doc-grammar
+    $ git branch -b issue-1000-doc-grammar
 
-The "i####" is a condensed form "issue1000".
+Feature branch workflow
+~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Create topic branch.
+1. Create feature branch.
 
 2. Edit and Commit
 
