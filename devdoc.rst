@@ -1,12 +1,10 @@
 .. -*- coding: utf-8 -*-
-.. sectnum::
-
 =====================================
 doc-templates Developer Documentation
 =====================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Sep 24 13:07:31 PDT 2012
+:Modified: Mon Sep 24 21:14:58 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
@@ -22,6 +20,8 @@ Contributions for 2012
 ======================
 
 1. Jesus Alvarez (github.com/demizer)
+
+.. sectnum::
 
 ------------
 Introduction
