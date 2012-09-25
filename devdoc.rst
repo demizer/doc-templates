@@ -87,21 +87,14 @@ Guidelines for new developers
 Please take a minute and quickly read through the following guidelines for
 contributing to the doc-templates project.
 
-Documentation
--------------
-
 1. Please do your best to document any and all contributions you make. This
-   includes code comments, or adding to the project documentation such as this
-   file.
+   includes code comments, or adding to the project documentation.
 
 #. Add your name to the contributors list. See `Contributors list`_ for
    more information.
 
-Version control tips for developers
------------------------------------
-
-* We use git-flow as the branching model for the doc-templates project. See
-  `Git with git-flow`_
+#. We use git-flow as the branching model for the doc-templates project. See
+   `Git with git-flow`_
 
 Guidelines for maintainers
 ==========================
