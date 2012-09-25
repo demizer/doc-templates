@@ -11,21 +11,6 @@ Developer Documentation Template
 :Revision: 0.0.1
 
 ------------
-Contributors
-------------
-
-The following people and organizations have contributed to this developer
-documentation. We appreciate their help very much for if it wasn't for them
-this document wouldn't exist
-
-Contributions for 2012
-======================
-
-1. Jesus Alvarez (github.com/demizer)
-
-.. sectnum::
-
-------------
 Introduction
 ------------
 
@@ -33,6 +18,19 @@ Hello and welcome to the developer documentation for the doc-templates project!
 In this file you will learn how to setup your environment to work on the
 doc-templates project. This includes version control, editors, and
 documentation.
+
+Contributors
+============
+
+The following people and organizations have contributed to this developer
+documentation. We appreciate their help very much for if it wasn't for them
+this document wouldn't exist
+
+::
+
+    2011-2012 :: Jesus Alvarez (github.com/demizer)
+
+        Main author and maintainer.
 
 .. contents::
 
