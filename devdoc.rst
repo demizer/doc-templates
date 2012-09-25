@@ -133,29 +133,20 @@ gpup uses the git-flow_ branching model as outlined by `Vincent Driessen`_ and
 provided by the git-flow_ extensions. You don't really need the extensions to
 use the branching model, but they make things a little easier.
 
-* There are two primary and permanent branches, *master* and *develop*.
-
-* The *master* branch is production ready. It is only changed on every release.
+Please read these preliminary guidelines for working with our repository:
 
 * **Do not develop on the master branch.**
 
-* Only official project members can contribute to the master branch.
+* There are two primary and permanent branches, *master* and *develop*.
 
 * The *develop* branch is where the magic happens. It contains all the latest
-  changes for next release version as outlined in spec.rst_.
+  changes for next release.
 
-* For big feature additions, create a *feature branch* off of develop. The
-  branch name must have the prefix ``feature/<feature>``.
+* The *master* branch is production ready. Changes in the develop branch are
+  merged into master on every release.
 
-* A feature branch should represent changes related to a single topic. If
-  you decide to work on another topic, create another branch.
-
-* Contributing members must use a forked repository and a pull request on their
-  develop branch to commit changes to the official project.
-
-* *Hotfixes* on production code should be branched from master and merged back
-  into both develop and master on success. The hotfix branch name must have the
-  prefix ``hotfix/<issue>``.
+* For big feature additions, create a *feature branch* off of the develop
+  branch.
 
 * Keep ``.gitignore`` clean. Don’t add test files to ``.gitignore`` that are
   specific to your environment.
@@ -164,12 +155,8 @@ use the branching model, but they make things a little easier.
   space is needed, use additional lines that can be 79 chars long. This is
   common practice for git commit messages.
 
-* When making a release to the master branch, the tag on the master branch
-  should be descriptive and include itemized changes made from the previous
-  release.
-
-The workflow
-============
+The general workflow
+====================
 
 Here is example workflow for the gpup project. These commands show the standard
 git commands as well as the git-flow_ extensions.
