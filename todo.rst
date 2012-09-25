@@ -4,7 +4,7 @@
 doc-templates Things To Do
 ==========================
 
-:Modified: Mon Sep 17 01:01:26 PDT 2012
+:Modified: Tue Sep 25 13:17:18 PDT 2012
 :Copyright: This document has been placed in the public domain.
 
 .. contents::
@@ -15,6 +15,11 @@ also a dumping ground for ideas under the Bucket section.
 ---------------
 The Idea Bucket
 ---------------
+
+- Tue Sep 25 13:16:08 PDT 2012: There should be planned releases for this
+  document to ease updating existing documents for developers. With planned
+  releases developers can also plan to include new changes into their existing
+  documents if they want.
 
 - I need to to add to figure out what sample item #2 should be.
 
