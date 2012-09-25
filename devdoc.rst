@@ -294,6 +294,9 @@ branch to develop the new feature, or any other features. These branches should
 be periodically merged back to the parent develop branch. The following is an
 example workflow for the develop branch:
 
+Develop branch workflow
+~~~~~~~~~~~~~~~~~~~~~~~
+
 1. Feature A is ready for development, a branch *feature-a* is created.
 
 2. Work on *feature-a* is going at a steady pace, tests are written and the
