@@ -1,12 +1,12 @@
 .. -*- coding: utf-8 -*-
 
-===========================================
-Open Source Software Specification Template
-===========================================
+=============================
+Design Specification Template
+=============================
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Fri Sep 14 01:34:58 PDT 2012
-:Modified: Sun Sep 23 21:41:47 PDT 2012
+:Modified: Wed Sep 26 13:04:20 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 1.0.0
 
