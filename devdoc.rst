@@ -6,7 +6,7 @@ Developer Documentation Template
 ================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Tue Sep 25 13:14:26 PDT 2012
+:Modified: Thu Sep 27 13:05:02 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 0.0.1
 
@@ -96,6 +96,8 @@ contributing to the doc-templates project.
 #. We use git-flow as the branching model for the doc-templates project. See
    `Git with git-flow`_
 
+#. Do not commit regenerated PDF documentation to your branches.
+
 Guidelines for maintainers
 ==========================
 
@@ -110,6 +112,14 @@ understand the following guidelines.
 
 #. We use git-flow as the branching model for the doc-templates project. See
    `Git with git-flow`_
+
+Release guidelines
+------------------
+
+1. Documentation revisions should be changed to reflect the current release
+   before merging to the master branch.
+
+#. Regenerate PDF documentation on every release and commit to the tree.
 
 ---------------
 Version control
