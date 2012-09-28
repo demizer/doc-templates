@@ -6,7 +6,7 @@ Developer Documentation Template
 ================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Thu Sep 27 13:05:02 PDT 2012
+:Modified: Fri Sep 28 13:16:43 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 0.0.1
 
@@ -26,11 +26,11 @@ The following people and organizations have contributed to this developer
 documentation. We appreciate their help very much for if it wasn't for them
 this document wouldn't exist
 
-::
-
-    2011-2012 :: Jesus Alvarez (github.com/demizer)
-
-        Main author and maintainer.
+====  =============  ==================  ===========================
+Year  Contributor    Contact             Contribution
+====  =============  ==================  ===========================
+2012  Jesus Alvarez  github.com/demizer  Main author and maintainer.
+====  =============  ==================  ===========================
 
 .. contents::
 

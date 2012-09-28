@@ -1,4 +1,5 @@
 .. -*- coding: utf-8 -*-
+.. sectnum::
 
 =============================
 Design Specification Template
@@ -6,13 +7,13 @@ Design Specification Template
 
 :Contributors: Jesus Alvarez (github.com/demizer)
 :Created: Fri Sep 14 01:34:58 PDT 2012
-:Modified: Wed Sep 26 13:04:20 PDT 2012
+:Modified: Fri Sep 28 13:17:47 PDT 2012
 :Copyright: This document has been placed in the public domain.
-:Revision: 1.0.0
+:Revision: 0.0.1
 
----------------
-1. Introduction
----------------
+------------
+Introduction
+------------
 
 This template is based on the software specification used by Canonical for its
 Ubuntu Linux Distribution. This file is meant to be used as a guide for
@@ -56,6 +57,19 @@ A specification should be written with the following considerations:
 * Specifications should be written in clear, concise and correct English. If
   you're not a native speaker, co-editing the spec with somebody who is might
   be a good idea.
+
+Contributors
+============
+
+The following people and organizations have contributed to this design
+documentation. We appreciate their help very much for if it wasn't for them
+this document wouldn't exist
+
+====  =============  ==================  ===========================
+Year  Contributor    Contact             Contribution
+====  =============  ==================  ===========================
+2012  Jesus Alvarez  github.com/demizer  Main author and maintainer.
+====  =============  ==================  ===========================
 
 .. contents::
 
