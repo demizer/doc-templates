@@ -493,8 +493,11 @@ The contributors section outlines all the contributors per year. This section
 should be updated by the contributor himself and the maintainer should make
 sure this information is up to date before excepting patches.
 
-Automatic modified date update
-------------------------------
+Modified time
+=============
+
+The modified timestamp is within all files to allow developers to quickly see
+when the file was last edited.
 
 The best programming editors can be configured to automatically update
 timestamps within a file. This section will detail how to setup this feature in
@@ -511,13 +514,18 @@ Add the following to your vim configuration:
         if &modified
             let save_cursor = getpos(".")
             let n = min([10, line("$")])
-            keepjumps exe '1,' . n . 's#^\(.\{,10}:Modified: \).*#\1' .
+            keepjumps exe '1,' . n . 's#^\(.\{,10}Modified: \).*#\1' .
                         \ strftime("%a %b %d %H:%M:%S %Z %Y") . '#e'
             call histdel('search', -1)
             call setpos('.', save_cursor)
         endif
     endfunction
     au BufWritePre * call LastModified()
+
+If using this function within windows, the ``strftime()`` date string will need
+to be change to ``strftime("%a %b %d %H:%M:%S <YOUR_TIME_ZONE> %Y")``. The time
+zone string should be an acronym, not the expanded form. For example, PDT
+instead of Pacific Daylight Time.
 
 Sections
 ========
