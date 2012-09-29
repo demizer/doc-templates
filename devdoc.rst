@@ -6,7 +6,7 @@ Developer Documentation Template
 ================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Fri Sep 28 13:34:05 PDT 2012
+:Modified: Fri Sep 28 23:36:13 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 0.0.1
 
@@ -407,11 +407,42 @@ follows:
     # Date: Sun Sep 23 22:04:55 PDT 2012
     date +"%a %b %d %H:%M:%S %Z %Y"
 
-Title block
-===========
+Title blocks
+============
 
-The first block of text in all documentation files should resemble the
-following:
+All files will contain a title block to show viewers of the file quick
+information about the file like a short description of the purpose of the file,
+the license, and the last time the file was modified.
+
+Source file title block
+-----------------------
+
+For regular source files in the doc-templates project, the title block should
+include the following example. The comment opearators can be removed or changed
+depending on the file type.
+
+.. code:: go
+
+    // doc-templates -- Document template examples for developers
+    //
+    // Copyright © 2012 - The doc-templates Authors
+    //
+    // MIT Licensed, see LICENSE for details
+    //
+    // This is an example title block. This line would contain a short
+    // description of the purpos of the file otherwise.
+    //
+    // Modified: Fri Sep 28 12:47:07 PDT 2012
+
+Notice:
+
+* There is no trailing ``//``.
+* The modified date is the last line.
+
+Documentation title block
+-------------------------
+
+The start of all reStructuredText files should be as follows:
 
 .. code:: rst
 
