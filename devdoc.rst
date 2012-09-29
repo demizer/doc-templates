@@ -487,7 +487,7 @@ The start of all reStructuredText files should be as follows:
     What is the purpose of this file or project.
 
 Contributors list
------------------
+=================
 
 The contributors section outlines all the contributors per year. This section
 should be updated by the contributor himself and the maintainer should make
@@ -501,7 +501,7 @@ timestamps within a file. This section will detail how to setup this feature in
 the most popular editors.
 
 VIM
-~~~
+---
 
 Add the following to your vim configuration:
 
