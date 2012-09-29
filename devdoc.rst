@@ -456,31 +456,35 @@ The start of all reStructuredText files should be as follows:
     :Created: Sun Sep 16 23:29:39 PDT 2012
     :Modified: Sun Sep 23 23:48:41 PDT 2012
     :Copyright: This document has been placed in the public domain.
-
-    Introduction
-    ============
+    :Revision: 0.0.1
 
     .. contents::
+
+    ------------
+    Introduction
+    ------------
+
+    This is where you write the introduction.
 
     Contributors
     ============
 
-    The following people and organizations have contributed to this document.
-    We appreciate their help very much for if it wasn't for them this document
-    wouldn't exist.
+    The following people and organizations have contributed to this
+    documentation. We appreciate their help very much for if it wasn't for them
+    this document wouldn't exist
 
-    ::
+    ====  =============  ==================  ===========================
+    Year  Contributor    Contact             Contribution
+    ====  =============  ==================  ===========================
+    2012  Jesus Alvarez  github.com/demizer  Main author and maintainer.
+    ====  =============  ==================  ===========================
 
-        2011-2012 :: Jesus Alvarez (github.com/demizer)
-
-            Main author and maintainer.
-
-        2011      :: Jose Quervo (tequila.com/jose)
-
-            Stress relief.
+    .. contents::
 
     Rationale
     =========
+
+    What is the purpose of this file or project.
 
 Contributors list
 -----------------
