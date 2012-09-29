@@ -6,7 +6,7 @@ Developer Documentation Template
 ================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Fri Sep 28 13:16:43 PDT 2012
+:Modified: Fri Sep 28 13:34:05 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 0.0.1
 
@@ -139,9 +139,9 @@ hang of it it is very nice, especially with the git extensions.
 Git with git-flow
 =================
 
-gpup uses the git-flow_ branching model as outlined by `Vincent Driessen`_ and
-provided by the git-flow_ extensions. You don't really need the extensions to
-use the branching model, but they make things a little easier.
+doc-templates uses the git-flow_ branching model as outlined by `Vincent
+Driessen`_ and provided by the git-flow_ extensions. You don't really need the
+extensions to use the branching model, but they make things a little easier.
 
 Please read these preliminary guidelines for working with our repository:
 
@@ -168,8 +168,8 @@ Please read these preliminary guidelines for working with our repository:
 The general workflow
 ====================
 
-Here is example workflow for the gpup project. These commands show the standard
-git commands as well as the git-flow_ extensions.
+Here is example workflow for the doc-templates project. These commands show the
+standard git commands as well as the git-flow_ extensions.
 
 1. Fork on GitHub (click Fork button)
 
@@ -177,13 +177,13 @@ git commands as well as the git-flow_ extensions.
 
    .. code:: bash
 
-    $ git clone https://<you>@github.com/<you>/gpup.git
+    $ git clone https://<you>@github.com/<you>/doc-templates.git
 
 3. Change into the project directory
 
    .. code:: bash
 
-    $ cd gpup/
+    $ cd doc-templates/
 
 4. Initialize the develop branch
 
@@ -243,9 +243,9 @@ For example, you have implemented the exciting new *feature X* (as outlined in
 spec.rst_) and all the tests are passing and you are really excited to get your
 work included on the next release revision. The next step is to either merge
 the changes into the master branch and tag it or send a pull request on your
-private develop branch to the gpup project maintainer. Tagging allows snapshots
-to be taken of the git tree and presented as downloads on github. The tag
-message should include a list of changes since the last release.
+private develop branch to the doc-templates project maintainer. Tagging allows
+snapshots to be taken of the git tree and presented as downloads on github. The
+tag message should include a list of changes since the last release.
 
 Principles for master branch releases
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
