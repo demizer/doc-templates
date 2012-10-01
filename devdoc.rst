@@ -78,58 +78,143 @@ upstream `doc templates project`_, please consider sending a pull request to
 that project. For example, if you use a different version control or a
 different editor that is not included in the upstream template, write it!
 
-----------------------------
-Contributing to this project
-----------------------------
+------------------------
+Version control with git
+------------------------
 
-So you want to contribute to the doc-templates project eh? Well fantastic!
-First things first though, we do have some established guidelines for new
-contributors that must be taken into consideration. Please read the following
-before submitting patches or a pull request.
+git_ is used to track changes within the source tree. github_ is used to host
+the project as well as track issues. For an introduction to using git and
+Github, see github-bootcamp_.
 
-Guidelines for new developers
-=============================
+**Commentary**
 
-Please take a minute and quickly read through the following guidelines for
-contributing to the doc-templates project.
+This section is just for using git in a very standard way. It contains only a
+master branch and all other branches are merged back into that branch. This is
+the branching model that the doc-templates project uses. A more advanced model
+is the git-flow model detailed in the next section.
 
-1. Please do your best to document any and all contributions you make. This
-   includes code comments, or adding to the project documentation.
+Git
+===
 
-#. Add your name to the contributors list. See `Contributors list`_ for
-   more information.
+There are no special considerations when using git with this project, such as a
+branching model like git-flow_. Please read these preliminary guidelines for
+working with our repository:
 
-#. We use git-flow as the branching model for the doc-templates project. See
-   `Git with git-flow`_
+* For big feature additions, create a *feature branch* off of the master
+  branch.
 
-#. Do not commit regenerated PDF documentation to your branches.
+* Keep ``.gitignore`` clean. Don’t add test files to ``.gitignore`` that are
+  specific to your environment.
 
-Guidelines for maintainers
-==========================
+* The first line in the commit message should be only 50 chars long. If more
+  space is needed, use additional lines that can be 79 chars long. This is
+  common practice for git commit messages.
 
-Maintainers or developers with official repository access, please read and
-understand the following guidelines.
+The general workflow
+====================
 
-1. Make sure the patches to the project are properly documentated. See
-   `Documentation style guide`_.
+Here is example workflow for aur-zfs.
 
-#. Make sure any new contributors for the year have added their name to the
-   contributor list. See `Contributors list`_ for more information.
+1. Fork on GitHub (click Fork button)
 
-#. We use git-flow as the branching model for the doc-templates project. See
-   `Git with git-flow`_
+#. Clone to your server
 
-Release guidelines
-------------------
+   .. code:: bash
 
-1. Documentation revisions should be changed to reflect the current release
-   before merging to the master branch.
+    $ git clone https://<you>@github.com/<you>/aur-zfs.git
 
-#. Regenerate PDF documentation on every release and commit to the tree.
+#. Change into the project directory
 
----------------
-Version control
----------------
+   .. code:: bash
+
+    $ cd aur-zfs/
+
+#. Branch for new feature
+
+   .. code:: bash
+
+    $ git branch -b <new_feature>
+
+#. Edit / Commit
+
+#. Push changes to remote
+
+   .. code:: bash
+
+    $ git push origin <new_feature>
+
+    # or
+
+    $ git checkout master
+    $ git merge --no-ff <new_feature>
+    $ git push origin master
+
+#. Send a pull request on github.
+
+Master branch
+-------------
+
+The master branch is the most current work. Any changes to the project are made
+in feature branches and merged back into the master branch.
+
+Master branch workflow
+~~~~~~~~~~~~~~~~~~~~~~
+
+1. Simply merge your changes from your develop branch and tag.
+
+Feature branch
+--------------
+
+Feature branches are to be created from the master branch and they must have
+specific names. Development in feature branches must be specific and to the
+point. If during development, another issue crops up, then create a new branch
+and pursue it there. There are two primary reasons for creation of a feature
+branch, development of a feature, or a bugfix.
+
+.. code:: bash
+
+    $ git branch -b 0.1-feature
+
+If creating a bugfix branch, the issue number from github should be referenced
+in the description:
+
+.. code:: bash
+
+    $ git branch -b issue-1000-doc-grammar
+
+Feature branch workflow
+~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Create feature branch.
+
+#. Edit and commit
+
+#. Rebase onto remote master to pull any changes that have occurred.
+
+   .. code:: bash
+
+    $ git rebase -i origin/develop
+
+#. Cleanup the commit history by squashing commits down to a single precise
+   commit:
+
+   .. code:: bash
+
+    $ git rebase -i HEAD^4
+
+#. Merge changes into master branch
+
+   .. code:: bash
+
+    $ git checkout master && git merge <topic-branch>
+
+#. Push master to your fork
+
+#. Send pull request
+
+-----------------------------
+Version control with git-flow
+-----------------------------
 
 git_ is used to track changes within the source tree. github_ is used to host
 the project as well as track issues. For an introduction to using git and
@@ -141,6 +226,10 @@ I use git-flow on most of my projects because it allows me to separate work on
 features into nice and neat branches in git that I can mess around with to my
 hearts content. It does have a very slight learning curve, but once you get the
 hang of it it is very nice, especially with the git extensions.
+
+If you use a different version control software than the ones listed in this
+section, please consider contributing your documentation of that VCS to the
+upstream `doc templates project`_.
 
 Git with git-flow
 =================
@@ -179,19 +268,19 @@ standard git commands as well as the git-flow_ extensions.
 
 1. Fork on GitHub (click Fork button)
 
-2. Clone to your server
+#. Clone to your server
 
    .. code:: bash
 
     $ git clone https://<you>@github.com/<you>/doc-templates.git
 
-3. Change into the project directory
+#. Change into the project directory
 
    .. code:: bash
 
     $ cd doc-templates/
 
-4. Initialize the develop branch
+#. Initialize the develop branch
 
    .. code:: bash
 
@@ -204,7 +293,7 @@ standard git commands as well as the git-flow_ extensions.
         $ <optional> git branch -a
         $ git checkout -b develop origin/develop
 
-5. Branch for new feature
+#. Branch for new feature
 
    .. code:: bash
 
@@ -216,9 +305,9 @@ standard git commands as well as the git-flow_ extensions.
 
         $ git branch -b feature/<new_feature> develop
 
-6. Edit / Commit
+#. Edit / Commit
 
-7. Push changes to remote
+#. Push changes to remote
 
    .. code:: bash
 
@@ -237,6 +326,8 @@ standard git commands as well as the git-flow_ extensions.
         $ git merge --no-ff feature/<new_feature>
         $ git branch -d feature/<new_feature>
         $ git push origin develop
+
+#. Send a pull request on github.
 
 Master branch
 -------------
@@ -261,15 +352,15 @@ Principles for master branch releases
    contributing features or changes as a contributing member, see `Develop
    branch`_ section.
 
-2. The master branch is solely for tested and "stable" code. All new features to
+#. The master branch is solely for tested and "stable" code. All new features to
    be merged into master must be tested and proved in the develop branch.
 
-3. A meaningful tag message must accompany the merged changes including changes
+#. A meaningful tag message must accompany the merged changes including changes
    made from the last release.
 
-4. This tagged branch is made available for download from github.
+#. This tagged branch is made available for download from github.
 
-5. Any critical fixes needed on stable code are to be developed in a *hotfix*
+#. Any critical fixes needed on stable code are to be developed in a *hotfix*
    branch based off of the master branch. Once the fix is implemented, the
    changes are merged back into both master and develop.
 
@@ -281,7 +372,7 @@ and developing *feature-x*.
 
 1. Run unit tests on feature-x.
 
-2. Merge feature-x into master
+#. Merge feature-x into master
 
    .. code:: bash
 
@@ -315,20 +406,20 @@ Develop branch workflow
 
 1. Feature A is ready for development, a branch *feature-a* is created.
 
-2. Work on *feature-a* is going at a steady pace, tests are written and the
+#. Work on *feature-a* is going at a steady pace, tests are written and the
    code passes.
 
-3. *feature-a* is pushed upstream if it is going to be a long haul.
+#. *feature-a* is pushed upstream if it is going to be a long haul.
 
-4. Changes are merged back into the develop branch, more testing is done.
+#. Changes are merged back into the develop branch, more testing is done.
 
-5. The develop branch is merged upstream.
+#. The develop branch is merged upstream.
 
-6. The develop branch is merged back into master and tagged.
+#. The develop branch is merged back into master and tagged.
 
-7. Master is pushed upstream.
+#. Master is pushed upstream.
 
-8. The *feature-a* branch is deleted.
+#. The *feature-a* branch is deleted.
 
 Feature branch
 --------------
@@ -364,30 +455,30 @@ Feature branch workflow
 
 1. Create feature branch.
 
-2. Edit and Commit
+#. Edit and Commit
 
-3. Rebase onto remote develop to pull any changes that have occurred.
+#. Rebase onto remote develop to pull any changes that have occurred.
 
    .. code:: bash
 
     $ git rebase -i origin/develop
 
-4. Cleanup the commit history by squashing commits down to a single precise
+#. Cleanup the commit history by squashing commits down to a single precise
    commit:
 
    .. code:: bash
 
     $ git rebase -i HEAD^4
 
-5. Merge changes into develop branch
+#. Merge changes into develop branch
 
    .. code:: bash
 
     $ git checkout develop && git merge <topic-branch>
 
-6. Push develop to your fork
+#. Push develop to your fork
 
-7. Send pull request
+#. Send pull request
 
 -------------------------
 Documentation style guide
@@ -431,7 +522,7 @@ depending on the file type.
 
     // doc-templates -- Document template examples for developers
     //
-    // Copyright © 2012 - The doc-templates Authors
+    // Copyright © 2012 - The doc-templates Contributors
     //
     // MIT Licensed, see LICENSE for details
     //
@@ -639,6 +730,53 @@ Guidelines for todo.rst
 =======================
 
 TBD
+
+----------------------------
+Contributing to this project
+----------------------------
+
+So you want to contribute to the doc-templates project eh? Well fantastic!
+First things first though, we do have some established guidelines for new
+contributors that must be taken into consideration. Please read the following
+before submitting patches or a pull request.
+
+Guidelines for new developers
+=============================
+
+Please take a minute and quickly read through the following guidelines for
+contributing to the doc-templates project.
+
+1. Please do your best to document any and all contributions you make. This
+   includes code comments, or adding to the project documentation.
+
+#. Add your name to the contributors list. See `Contributors list`_ for
+   more information.
+
+#. Use git-flow as the branching model. See `Git with git-flow`_
+
+#. Do not commit regenerated PDF documentation to your branches.
+
+Guidelines for maintainers
+==========================
+
+Maintainers or developers with official repository access, please read and
+understand the following guidelines.
+
+1. Make sure the patches to the project are properly documentated. See
+   `Documentation style guide`_.
+
+#. Make sure any new contributors for the year have added their name to the
+   contributor list. See `Contributors list`_ for more information.
+
+#. Use git-flow as the branching model. See `Git with git-flow`_
+
+Making a new release
+====================
+
+1. Documentation revisions should be changed to reflect the current release
+   before merging to the master branch.
+
+#. Regenerate PDF documentation on every release and commit to the tree.
 
 .. _git: http://git-scm.com/
 .. _github: http://github.com/
