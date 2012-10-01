@@ -6,7 +6,7 @@ Developer Documentation Template
 ================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Fri Sep 28 23:36:13 PDT 2012
+:Modified: Mon Oct 01 00:22:11 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 0.0.1
 
@@ -22,9 +22,9 @@ documentation.
 Contributors
 ============
 
-The following people and organizations have contributed to this developer
-documentation. We appreciate their help very much for if it wasn't for them
-this document wouldn't exist
+The following people and organizations have contributed to this project. We
+appreciate their help very much for if it wasn't for them this project wouldn't
+exist
 
 ====  =============  ==================  ===========================
 Year  Contributor    Contact             Contribution
