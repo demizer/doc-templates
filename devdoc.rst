@@ -34,6 +34,12 @@ Year  Contributor    Contact             Contribution
 
 .. contents::
 
+---------
+Rationale
+---------
+
+An introduction about the importance of this project in solving a problem.
+
 How to use this file
 ====================
 
