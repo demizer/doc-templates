@@ -63,7 +63,7 @@ committing your version of the file to your projects repo. The commentary
 section is my opinion on why a section exists without integrating that
 discussion into the section and making it more difficult to parse out.
 
-The authors of the doc-templates project humbly request that the following
+The contributors of the doc-templates project humbly request that the following
 section be included with your documentation to encourage contributions to the
 upstream documentation framework.
 
