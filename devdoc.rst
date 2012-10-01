@@ -6,7 +6,7 @@ Developer Documentation Template
 ================================
 
 :Created: Sun Sep 16 23:29:39 PDT 2012
-:Modified: Mon Oct 01 00:22:11 PDT 2012
+:Modified: Mon Oct 01 13:14:21 PDT 2012
 :Copyright: This document has been placed in the public domain.
 :Revision: 0.0.1
 
@@ -539,9 +539,7 @@ Notice:
 Documentation title block
 -------------------------
 
-The start of all reStructuredText files should be as follows:
-
-.. code:: rst
+The start of all reStructuredText files should be as follows::
 
     .. -*- coding: utf-8 -*-
     .. sectnum::
@@ -566,15 +564,16 @@ The start of all reStructuredText files should be as follows:
     Contributors
     ============
 
-    The following people and organizations have contributed to this
-    documentation. We appreciate their help very much for if it wasn't for them
-    this document wouldn't exist
+    The following people and organizations have contributed to this project. We
+    appreciate their help very much for if it wasn't for them this project wouldn't
+    exist.
 
-    ====  =============  ==================  ===========================
-    Year  Contributor    Contact             Contribution
-    ====  =============  ==================  ===========================
-    2012  Jesus Alvarez  github.com/demizer  Main author and maintainer.
-    ====  =============  ==================  ===========================
+    ===========  =============  ==================  ===========================
+    Year         Contributor    Contact             Contribution
+    ===========  =============  ==================  ===========================
+    2012         Jesus Alvarez  github.com/demizer  Main author and maintainer.
+    2010 - 2012  Jose Quervo    jose@tequila.org    Customer support.
+    ===========  =============  ==================  ===========================
 
     .. contents::
 
@@ -589,6 +588,24 @@ Contributors list
 The contributors section outlines all the contributors per year. This section
 should be updated by the contributor himself and the maintainer should make
 sure this information is up to date before excepting patches.
+
+In the year field of the contributors table, please separate years with spaces.
+Joining them together produces invalid PDF output. For example::
+
+    2008 - 2012
+
+    not
+
+    2008-2012
+
+    or
+
+    2008 - 2010, 2012
+
+    or
+
+    2008, 2009, 2010, 2012
+
 
 Modified time
 =============
